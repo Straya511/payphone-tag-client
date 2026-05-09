@@ -8,8 +8,8 @@ class Payphone:
     latitude: float
     indentifier: int
     status: str
-    last_captured: str
-    zero: int
+    last_captured: str  # TODO confirm name/value
+    zero: int  # TODO confirm name/value
 
 
 @dataclass
