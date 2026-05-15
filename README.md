@@ -1,2 +1,2 @@
 # payphone-tag-client
-Python Client for Gangerang's Payphone Tag
+A python client for interacting with Gangerang's Payphone Tag
