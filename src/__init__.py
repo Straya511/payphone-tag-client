@@ -32,7 +32,10 @@ class Client:
         self.pin: int = None
         self.profile: Profile = None
 
-    def login(self, pin: int) -> bool:
+    def login(self, pin: int, relog: bool = False) -> bool:
+        if self.logged_in and relog == False:
+            raise Exception("Already logged in, pass relog = True and retry.")
+
         if self.ratelimits["authentication"] == True:
             return False
 
@@ -51,4 +54,6 @@ class Client:
 
         response_data: dict = response.json()
         self.profile = Profile(**response_data)
+        self.pin = pin
+        self.logged_in = True
         return True
