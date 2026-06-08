@@ -20,6 +20,21 @@ class API:
     ENDPOINT = "https://payphonetag.com/api/"
     PLAYER_SNAPSHOT = ENDPOINT + "player-snapshot"
     IDENTITY = ENDPOINT + "identity"
+    PLAYER_STATS = ENDPOINT + "player-stats"
+    BADGES = ENDPOINT + "badges"
+    BADGES_SUMMARY = ENDPOINT + "badges/summary"
+    GAME_STATS = ENDPOINT + "game-stats"
+    PREFERENCES = ENDPOINT + "notification-prefs"
+
+    # Push Notifications
+    PUSH = ENDPOINT + "push/"
+    SUBSCRIBE = PUSH + "subscribe"
+    UNSUBSCRIBE = PUSH + "unsubscribe"
+    VAPID = PUSH + "vapid-key"
+
+    # Account
+    
+
 
 
 class Client:
@@ -68,6 +83,9 @@ class Client:
     def get_emojis(self):
         pass
 
+    def get_badges(self):
+        pass
+
     def get_callsigns(self):
         pass
 
@@ -103,3 +121,19 @@ class Client:
 
     def get_players(self):
         pass
+
+    def get_game_stats(self):
+        pass
+
+    # PUSH NOTIFICATIONS
+    def subscribe_push(self):
+        pass  # POST
+
+    def unsubscribe_push(self):
+        pass  # POST
+
+    def get_vapid_key(self):
+        pass  # GET
+
+    def save_notification_preferences(self):
+        pass  # POST
