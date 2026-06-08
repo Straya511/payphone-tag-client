@@ -1,5 +1,6 @@
-from requests import HTTPError
 from dataclasses import dataclass
+from permissions import Checks
+from requests import HTTPError
 import requests
 import logging
 
@@ -57,3 +58,48 @@ class Client:
         self.pin = pin
         self.logged_in = True
         return True
+
+    def get_payphone(self, payphone_id):
+        pass
+
+    def get_payphones(self):
+        pass
+
+    def get_emojis(self):
+        pass
+
+    def get_callsigns(self):
+        pass
+
+    def get_leaderboard(self):
+        pass
+
+    def get_ranks(self):
+        pass
+
+    def get_player_stats(self):
+        pass
+
+    def get_player_activity(self):
+        pass
+
+    def get_player_snapshot(self):
+        pass
+
+    def get_topology(self):
+        pass
+
+    def get_territory(self):
+        pass
+
+    def get_cell(self):
+        pass
+
+    def get_cell_leaderboard(self):
+        pass
+
+    def get_past_captures(self, player_id: int):
+        pass
+
+    def get_players(self):
+        pass
