@@ -19,7 +19,7 @@ class Profile:
 class API:
     ENDPOINT = "https://payphonetag.com/api/"
     PLAYER_SNAPSHOT = ENDPOINT + "player-snapshot"
-    IDENTITY = ENDPOINT + "indentiy"
+    IDENTITY = ENDPOINT + "identity"
 
 
 class Client:
